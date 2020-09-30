@@ -3,7 +3,7 @@ $(document).ready(() => {
         e.preventDefault()
         let location = $("#get_location").val()
         
-        fetch("http://localhost:3000/location?place="+location).then( (data) => {
+        fetch("/location?place="+location).then( (data) => {
             data.json().then((dt_val) => {
                 if(dt_val.error){
                     let error = dt_val.Error
