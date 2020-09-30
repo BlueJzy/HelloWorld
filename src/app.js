@@ -79,7 +79,6 @@ app.get('/location', (req, res) => {
 // creating the Srver
 app.listen(3000, () => {
     console.log("Server is Start!")
-    console.log(public, viewPath, partialsPath)
 })
 
 
